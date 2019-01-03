@@ -1,0 +1,8 @@
+<div>
+  <h3>Reserve hotel</h3>
+  <p>You have selected {{hotelId}}</p>
+  <app-discount [assetId]="hotelId" (apply)=apply($event)>
+  </app-discount>
+
+  <p *ngIf="discountCode != null">you have applied for discount {{discountCode}}</p>
+</div>

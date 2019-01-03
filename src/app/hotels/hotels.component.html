@@ -1,0 +1,9 @@
+<div>
+    <h3>Hotels</h3>
+    <ul>
+      <li *ngFor="let hotel of hotels | async">
+        <span href="">{{hotel.name}} ({{hotel.location}}) </span>
+        <button [routerLink]="['/hotels', hotel.id]"> Book </button>
+      </li>
+    </ul>
+  </div>
