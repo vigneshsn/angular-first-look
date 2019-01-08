@@ -5,8 +5,9 @@ import { HotelReservationComponent } from './hotel-reservation/hotel-reservation
 
 
 const routes: Routes = [
-    {path: 'hotels', component: HotelsComponent },
-    {path: 'hotels/:id', component: HotelReservationComponent}
+    {path: '', redirectTo: 'list', pathMatch: 'full' },
+    {path: 'list', component: HotelsComponent},
+    {path: 'hotel-detail/:id', component: HotelReservationComponent}
 ]
 
 @NgModule({

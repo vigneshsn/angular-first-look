@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from  '@angular/common/http'
-import { CONFIG } from '../config'
 import { map } from 'rxjs/operators';
+import { CONFIG } from 'src/app/config';
 
 let dealsServiceUrl = CONFIG.baseUrls.deals;
 

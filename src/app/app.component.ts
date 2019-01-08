@@ -7,13 +7,9 @@ import { UserService } from './shared/user.service'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'reservation-app';
-  userName: String;
 
-  constructor(private userService: UserService){}
+  constructor(){}
 
-  ngOnInit() {
-    this.userName = this.userService.getUserProfile().userName;
-  }
+  ngOnInit() {}
 
 }

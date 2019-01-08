@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from  '@angular/common/http'
-import { CONFIG } from '../config'
 import { map } from 'rxjs/operators';
+import { CONFIG } from 'src/app/config';
 
 let hotelServiceUrl = CONFIG.baseUrls.hotels;
 
@@ -12,9 +12,7 @@ export class Hotel {
   img: String;
 }
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class HotelService {
 
   constructor(private http: HttpClient) { }

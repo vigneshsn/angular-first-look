@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { UserService } from '../shared/user.service';
 import { DealService, Deals } from './deal-service'
 import { Observable } from 'rxjs';
 

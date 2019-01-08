@@ -3,16 +3,27 @@ import { Injectable } from '@angular/core';
 // @Injectable({
 //   providedIn: 'root'
 // })
+
+export class User {
+  id: String;
+  userName: String;
+  age: Number;
+  city: String;
+}
+
 @Injectable()
 export class UserService {
 
   constructor() { }
 
-  getUserProfile() {
+  getUserProfile(): User {
+    //todo make service call
     return {
+      "id": "1234",
       "userName": "Hulk",
-      "age": "30",
+      "age": 30,
       "city": "Chennai"
     }
+
   }
 }

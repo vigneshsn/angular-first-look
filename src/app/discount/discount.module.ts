@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [DiscountComponent],
-    imports: [CommonModule, FormsModule]
+    imports: [CommonModule, FormsModule],
+    exports: [DiscountComponent]
 })
 export class DiscountModule {}

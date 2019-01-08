@@ -1,0 +1,33 @@
+<div class="container">
+  
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" [routerLink]="['dashboard']">
+                Dashboard
+            </a>
+  
+            <a class="navbar-item" [routerLink]="['flights']">
+                Flights
+            </a>
+  
+            <a class="navbar-item" [routerLink]="['hotels']">
+                Hotels
+            </a>
+  
+            <a class="navbar-item" (click)="logout()">
+              Logout
+            </a>
+  
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+    </nav>
+  
+    <section class="container">
+      <router-outlet></router-outlet>
+    </section>
+  
+  </div>

@@ -2,7 +2,7 @@
   <h3>Deals</h3>
   <ul>
     <li *ngFor="let deal of deals | async">
-      <a href="" [routerLink]="['/deals', deal.id]">{{deal.desc}}</a>
+      <a href="" [routerLink]="['../deals-detail', deal.id]">{{deal.desc}}</a>
     </li>
   </ul>
 </div>
